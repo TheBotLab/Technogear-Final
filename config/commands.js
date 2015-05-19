@@ -1253,7 +1253,7 @@ var commands = exports.commands = {
 	staff: function (target, room, user) {
 		if (!this.canBroadcast()) return;
 		this.sendReplyBox(
-	                ""<table border="1" bgcolor="#C2D1FF" width="100%" target="_blank"><tbody><tr target="_blank"><center><b><font color="black"> Administrators</b><br />" +
+	                "<b>~ Administrators</b><br />" +
                         "- Anrin Deo Avis<br />" +
                         "- indiancharizard#<br />" +
                         "- Ansirent<br />" +
@@ -1278,8 +1278,8 @@ var commands = exports.commands = {
                         "- Ankrish<br />" +
                         "- 1love 1life<br />" +
                         "- InvincibleSwampert<br />" +
-                        "- Tx Bug Mono <br /><br /> +
-			""
+                        "- Tx Bug Mono<br />" +
+			"- Prince Harrison<br /><br />" +
 		);
 	},
 
