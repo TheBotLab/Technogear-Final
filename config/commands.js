@@ -1252,7 +1252,7 @@ var commands = exports.commands = {
 	staff: function (target, room, user) {
 		if (!this.canBroadcast()) return;
 		this.sendReplyBox(
-			"<b>~ Administrators</b><br />" +
+			"<table border="1" bgcolor="#C2D1FF" width="100%" target="_blank"><tbody><tr target="_blank"><center><b><font color="black">  Administrators</b><br />" +
 			"- Anrin Deo Avis<br />" +
 			"- indiancharizard#<br />" +
 			"- Ansirent<br />" +
@@ -1262,23 +1262,23 @@ var commands = exports.commands = {
 			"- Brendon Mcclullum<br />" +
 			"- Dragon Slayer N<br />" +
 			"- Rhytham D Jane<br />" +
-			"- Ash Ketchum Admin<br />" +
+			"- Ash Ketchum Admn<br />" +
 			"- Lord N is here<br /><br />" +
-			"<b>@ Moderators &Leaders %Drivers and Other</b><br />" +
+			"<b>@ Moderators And Drivers And Leaders</b><br />" +
 			"- Roxyjadhav<br />" +
 			"- JrrKein<br />" +
 			"- Hydrostatics<br />" +
 			"- Unbox therapy<br />" +
 			"- Punkysaur<br />" +
-			"- Mudkipguy<br />" +
+			"- mudkipguy<br />" +
 			"- Master Float<br />" +
 			"- Atharva19<br />" +
 			"- PokeTrainer Roxy<br />" +
 			"- Ankrish<br />" +
 			"- 1love 1life<br />" +
 			"- InvincibleSwampert<br />" +
-			"- Tx Bug Mono<br />" +
-			"- Prince Harrison<br /><br />" +
+			"- Tx Bug Mono <br /><br /></font></tr></tbody></table></center>" +
+			""
 		);
 	},
 
