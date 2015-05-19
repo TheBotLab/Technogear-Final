@@ -1253,32 +1253,32 @@ var commands = exports.commands = {
 		if (!this.canBroadcast()) return;
 		this.sendReplyBox(
 			"<b>~ Administrators</b><br />" +
-			"- Ausaudriel (Audy)<br />" +
-			"- Forever (skylight)<br />" +
-			"- Hiroshi Sotomura (Sotomura, Sotomura606)<br />" +
-			"- Lilith (TitanBlade, TwilightBlade)<br />" +
-			"- Livewire<br />" +
-			"- Rukario (PPN)<br />" +
-			"- seeker (abnegation, stranger)<br />" +
-			"- Sheep (Cirnysheep)<br />" +
-			"- shenanigans (razor leaf)<br />" +
-			"- wolf (wofl)<br />" +
-			"- Zeffy<br /><br />" +
-			"<b>@ Moderators</b><br />" +
-			"- Altairis (Winry)<br />" +
-			"- Anti (Crazy Uncle Anti)<br />" +
-			"- apocalypseArisen (Megido, omicron, omicronhuh)<br />" +
-			"- Aslan<br />" +
-			"- Castform (orb castform, Powalen)<br />" +
-			"- Christos<br />" +
-			"- Dragon (Aura Blackquill, Captain Syrup, Dragii, Erika Senpai, Iris, Kjelle, Miss Fortune, Mitsuruu, Nabooru, Tharja)<br />" +
-			"- Peitharchia (Adrastia, nymph)<br />" +
-			"- Sanguine (Natalya)<br />" +
-			"- Sector (Milena Kunis)<br />" +
-			"- Sweep<br />" +
-			"- Synerjee (Alto Mare, Autumn Reverie)<br />" +
-			"- Yoshikko (air tangela, gloom)<br /><br />" +
-			"<a href=\"http://www.pokecommunity.com/showthread.php?t=289012#staff\">Click here for more details.</a>"
+		"- Anrin Deo Avis<br />" +
+                        "- indiancharizard#<br />" +
+                        "- Ansirent<br />" +
+                        "- Parth9<br />" +
+                        "- Kakhi<br />" +
+                        "- Indiancharizard#<br />" +
+                        "- Brendon Mcclullum<br />" +
+                        "- Dragon Slayer N<br />" +
+                        "- Rhytham D Jane<br />" +
+                        "- Ash Ketchum Admn<br />" +
+                        "- Lord N is here<br /><br />" +
+                        "Leaders, Moderators And Drivers</b><br />" +
+                        "- Roxyjadhav<br />" +
+                        "- JrrKein<br />" +
+                        "- Hydrostatics<br />" +
+                        "- Unbox therapy<br />" +
+                        "- Punkysaur<br />" +
+                        "- mudkipguy<br />" +
+                        "- Master Float<br />" +
+                        "- Atharva19<br />" +
+                        "- PokeTrainer Roxy<br />" +
+                        "- Ankrish<br />" +
+                        "- 1love 1life<br />" +
+                        "- InvincibleSwampert<br />" +
+                        "- Tx Bug Mono<br />" +
+			"- Prince Harrison<br /><br />" +
 		);
 	},
 
