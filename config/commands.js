@@ -1253,7 +1253,7 @@ var commands = exports.commands = {
 	staff: function (target, room, user) {
 		if (!this.canBroadcast()) return;
 		this.sendReplyBox(
-	                <br><b> Administrators</b><br />" +
+	                "<br><b> Administrators</b><br />" +
                         "- Anrin Deo Avis<br />" +
                         "- indiancharizard#<br />" +
                         "- Ansirent<br />" +
