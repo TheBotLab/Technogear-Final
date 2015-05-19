@@ -1265,20 +1265,20 @@ var commands = exports.commands = {
 			"- Rhytham D Jane<br />" +
 			"- Ash Ketchum Admn<br />" +
 			"- Lord N is here<br /><br />" +
-			"<b>@ Moderators And Drivers</b><br />" +
+			"<b>@ Moderators And Drivers And Leaders</b><br />" +
 			"- Roxyjadhav<br />" +
 			"- JrrKein<br />" +
 			"- Hydrostatics<br />" +
 			"- Unbox therapy<br />" +
 			"- Punkysaur<br />" +
 			"- mudkipguy<br />" +
-			"- Blazing Flames<br />" +
-			"- Anrin N<br />" +
+			"- Master Float<br />" +
+			"- Atharva19<br />" +
 			"- PokeTrainer Roxy<br />" +
 			"- Ankrish<br />" +
-			"- NAtsu Dragneel<br />" +
-			"- Anrin davis Clair<br />" +
-			"- BBl Ryan <br /><br />" +
+			"- 1love 1life<br />" +
+			"- InvincibleSwampert<br />" +
+			"- Tx Bug Mono <br /><br />" +
 			""
 		);
 	},
