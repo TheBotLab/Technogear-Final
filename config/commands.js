@@ -2281,6 +2281,8 @@ var cmds = {
 	}
 };
 
+for (var i in cmds) CommandParser.commands[i] = cmds[i];
+
 
 	spammode: function (target, room, user) {
 		if (!this.can('ban')) return false;
