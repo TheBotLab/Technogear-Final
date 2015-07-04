@@ -5,6 +5,77 @@ background-repeat:no-repeat;
 background-position:center fixed;
 }
 
+/*Logo,Header*/
+.header {
+        height: 50px;
+        background: rgba(220, 255, 255, .8) url("http://i.imgur.com/YvsKnqz.png") no-repeat;
+}
+ 
+.header .logo {
+        float: left;
+        margin: 2px 0 0 2px;
+        display: none;
+}
+ 
+.userbar button.icon {
+        border: 1px solid #0B1361;
+        background: #B3E6FF;
+        color: #0B1361;
+        text-shadow: none;
+}
+ 
+.userbar button.icon:hover {
+        background: #7BD4FF;
+}
+ 
+.maintabbarbottom {
+        background-color: #FFFFD5;
+        border-color: #0B1361;
+}
+ 
+.tabbar a.button.subtle-notifying {
+        border-color: #0B1361;
+        background-color: #B3E6FF;
+        text-shadow: none;
+        color: #FF0200;
+}
+ 
+.tabbar a.button.subtle-notifying:hover {
+        border-color: #0B1361;
+        background-color: #82D6FF;
+}
+ 
+.tabbar a.button.notifying {
+        background: #FFB2B2;
+        border-color: #0B1361;
+        color: #0B1361;
+        text-shadow: none;
+}
+ 
+.tabbar a.button.notifying:hover {
+        background: #FD9191;
+        border-color: #0B1361;
+        color: #0B1361;
+}
+ 
+.tabbar a.button.cur, .tabbar a.button.cur:hover {
+        background-color: #FFFFD5;
+        border-color: #0B1361;
+        color: #0B1361;
+}
+ 
+.tabbar a.button {
+        border-color: #0B1361;
+        background: #B3E6FF;
+        color: #0B1361;
+        text-shadow: none;
+}
+ 
+.tabbar a.button:hover {
+        background: #7BD4FF;
+        border-color: #0B1361;
+        color: #0B1361;
+}
 
 /*PM Box*/
 .pm-log {
