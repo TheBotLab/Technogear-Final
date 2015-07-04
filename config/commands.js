@@ -1255,7 +1255,9 @@ var commands = exports.commands = {
 			"<b>~ Administrators</b><br />" +
 		        "- Mudkipguy<br />" +
 			"<b>& Leaders,@ Moderators And % Drivers</b><br />" +
-			"- No one till now!<br />" +
+			"- Zinc Oxide<br />" +
+			"- Dranzardite<br />" +
+			"- Firestatics<br />" +
 			""
 		);
 	},
