@@ -1,156 +1,1474 @@
-/*Main BG*/
-body {
-background-image:url('http://www.surftin.com/images/pokemon-tcg_626428.jpg');
-background-repeat:no-repeat;
-background-position:center fixed;
-}
+/**************
+  * General CSS *
+  **************/
 
-/*Logo,Header*/
-.header {
-        height: 50px;
-        background: rgba(220, 255, 255, .8) url("http://i.imgur.com/RnQlvof.png") no-repeat;
-}
+  body {
+    background:url("http://i.imgur.com/pZCFvJ3.png?1") !important;
+    background-color: #71C2FA;
+    color: #FFF;
+    font-family: helvetica,arial,sans-serif;
+  }
+
+  button {
+    box-shadow: none;
+    border: 1px solid #FFF;
+    background-color: rgba(71, 90, 184, 0.8);
+    color: #FFF;
+    text-shadow: none;
+    font-family: helvetica,arial,sans-serif;
+  }
+
+  button:hover {
+    box-shadow: none;
+    border-color: #FFF;
+    background-color: rgba(22, 33, 95, 0.8);
+    color: #FFF;
+    text-shadow: none;
+  }
+
+  .textbox {
+    box-shadow: none;
+    border: 1px solid #000;
+    background: #F9F9F9;
+  }
+
+  .textbox:hover {
+    box-shadow: none;
+    border: 1px solid #000;
+    background: #FFF;
+  }
+
+  .textbox:focus {
+    border: 1px solid #000;
+    background: #FFF;
+    box-shadow: 0px 1px 2px #D2D2D2 inset, 0px 0px 5px #475AB8;
+  }
+
+  .ps-overlay {
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  .ps-room.ps-room-light.scrollable ul li button {
+    margin-bottom: 2px;
+  }
+
+  .ps-room.ps-room-light.scrollable .textbox {
+    box-shadow: none;
+    border-color: #FFF;
+  } 
+
+  .ps-room.ps-room-light {
+    background: transparent;
+    border-color: #000;
+  }
+
+  .ps-room.ps-room-light.scrollable {
+    background: rgba(0, 0, 0, 0.8);
+    color: #F2F2F2;
+  }
+
+  .closebutton, .minimizebutton {
+    color: #666;
+  }
+
+  /* Header CSS */
+
+  #header {
+    background: rgba(0, 0, 0, 0.8);
+    color: #F2F2F2;
+  }
  
-.header .logo {
+   .header .logo {
         float: left;
         margin: 2px 0 0 2px;
         display: none;
-}
- 
-.userbar button.icon {
-        border: 1px solid #0B1361;
-        background: #B3E6FF;
-        color: #0B1361;
-        text-shadow: none;
-}
- 
-.userbar button.icon:hover {
-        background: #7BD4FF;
-}
- 
-.maintabbarbottom {
-        background-color: #FFFFD5;
-        border-color: #0B1361;
-}
- 
-.tabbar a.button.subtle-notifying {
-        border-color: #0B1361;
-        background-color: #B3E6FF;
-        text-shadow: none;
-        color: #FF0200;
-}
- 
-.tabbar a.button.subtle-notifying:hover {
-        border-color: #0B1361;
-        background-color: #82D6FF;
-}
- 
-.tabbar a.button.notifying {
-        background: #FFB2B2;
-        border-color: #0B1361;
-        color: #0B1361;
-        text-shadow: none;
-}
- 
-.tabbar a.button.notifying:hover {
-        background: #FD9191;
-        border-color: #0B1361;
-        color: #0B1361;
-}
- 
-.tabbar a.button.cur, .tabbar a.button.cur:hover {
-        background-color: #FFFFD5;
-        border-color: #0B1361;
-        color: #0B1361;
-}
- 
-.tabbar a.button {
-        border-color: #0B1361;
-        background: #B3E6FF;
-        color: #0B1361;
-        text-shadow: none;
-}
- 
-.tabbar a.button:hover {
-        background: #7BD4FF;
-        border-color: #0B1361;
-        color: #0B1361;
-}
-
-/*PM Box*/
-.pm-log {
-min-height: 100px;
-max-height: 300px;
-color: #000000;
-word-wrap: break-word;
-overflow: auto;
-border: 0px solid #000000;
-border-top-left-radius: 0px;
-border-top-right-radius: 0px;
-}
-.pm-window h3 {
-    background: #181616;
-   border: 2px;
-}
-.pm-window.focused h3, .pm-window.focused h3:hover {
-background: #cbc8c8;
-border: 2px;
-}
-.pm-log-add {
-        background: #404040;
-   border: 2px;
-     border-color: #000;
-}
-
-/*Chat*/
-.chat-log {
-     font-size: 10pt;
-     opacity: 1;
-     border-left: 1px solid rgb(95, 200, 255);
-     overflow: auto;
-}
-
-
-.userbar{
-border:1px solid #b6b6b6;
-padding:5px;
-background: #404040;
-margin-top:-5px
-}
-
-/*"Look for a battle" buttons (when hovered over)*/
-.menugroup .button:hover {
-    background: #3b3b3b;
-   color: #cccccc
-}
-
-/*"Look for a battle" buttons*/
-.menugroup .button {
-     background: #cccccc;
-   color: #3b3b3b
-}
-
-
-.userlist {
-  background: #cccccc;
-  color: #fff;
-  border: 1px solid;
-}
-
-.tabbar a.button.cur,.tabbar a.button.cur:hover {
-color: #3b3b3b;
-text-shadow:none;
-   border: 2px;
-background: #cccccc;
-cursor: default;
-}
-
-.tabbar a.button {
-background: #3b3b3b;
-color: #cccccc;
-}
-
-.char {
-  background: url(http://fc09.deviantart.net/fs71/f/2012/275/7/7/black_and_grey_stripe_pattern_by_wiizkiid-d5gm6uv.png) center;
-  color: #eff;
   }
+
+  .userbar .username {
+    text-shadow: 1px 1px 0px #000, 1px -1px 0px #000, -1px 1px 0px #000, -1px -1px 0px #000;
+  }
+
+  .maintabbarbottom {
+    background: #1D90FF;
+    border-color: #000;
+    box-shadow: none;
+  }
+
+  .tabbar a.button.notifying {
+    background: #CE77A0;
+    border: 1px solid #A23B68;
+    color: #FFF;
+    text-shadow: 0px -1px 0px #A23B68;
+    z-index: 4;
+  }
+
+  .tabbar a.button.notifying:hover {
+    background: #D87EA8;
+    border: 1px solid #A23B68;
+    color: #FFF;
+    text-shadow: 0px -1px 0px #A23B68;
+  }
+
+  .tabbar a.button.subtle-notifying {
+    color: #C3477D;
+    background:#FFF;
+    border: 1px solid #000;
+    text-shadow: none;
+  }
+
+  .tabbar a.button.subtle-notifying:hover {
+    color: #C3477D;
+    background: #C9C9C9;
+    border: 1px solid #000;
+    text-shadow: none;
+  }
+
+  .tabbar a.button.cur, .tabbar a.button.cur:hover {
+    color: #FFF;
+    background: #1D90FF;
+    border: 1px solid #000;
+    text-shadow: 0px -1px 0px #1A71C9;
+  }
+
+  .tabbar a.button {
+    color: #000;
+    background:#FFF;
+    border: 1px solid #000;
+    text-shadow: none;
+  }
+
+  .tabbar a.button:hover {
+    color: #000;
+    background: #C9C9C9;
+    border: 1px solid #000;
+    text-shadow: none;
+  }
+
+  /* Header CSS ~end */
+
+  /* Popup CSS */
+
+  .ps-popup {
+    border-color: #000;
+    background: #061522;
+    color: #F2F2F2;
+    box-shadow: 1px 1px 0px rgba(255, 255, 255, 0.3) inset, -1px -1px 0px rgba(228, 228, 228, 0.3) inset, 2px 2px 3px rgba(0, 0, 0, 0.2);
+  }
+
+  .ps-popup a {
+    color: #B8688B;
+  }
+
+  .ps-popup a:hover {
+    color: #C3477D;
+  }
+
+  .ps-popup hr {
+    border: none;
+    border-bottom: 1px solid #F2F2F2;
+  }
+
+  .popupmenu h3 {
+    color: #B8688B;
+  }
+
+  .popupmenu button {
+    width: 220px;
+    overflow-x: hidden;
+    color: #DBDCE1;
+  }
+
+  .popupmenu button:hover, .popupmenu button.sel:hover {
+    background: rgba(0, 0, 0, 0.5);
+    border-color: #DBDCE1;
+  }
+
+  .popupmenu button.sel {
+    border-color: #DBDCE1;
+  }
+
+  .avatarlist button {
+    border-color: #F2F2F2;
+  }
+
+  .avatarlist button:hover {
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-color: #F2F2F2;
+  }
+
+  p.or {
+    color: #F2F2F2;
+  }
+
+  p.or::before, p.or::after {
+    border-bottom-color: #AAA;
+  }
+
+  .credits h2 {
+    color: #B8688B;
+  }
+
+  .credits ul {
+    color: #475AB8;
+  }
+
+  .credits ul li p, a.subtle {
+    color: #596FDB;
+  }
+
+  a.subtle:hover {
+    color: #475AB8;
+  }
+
+  .credits li small {
+    color: #ABB6D2;
+  }
+
+  /* Popup CSS ~end */
+
+  /*******************
+  * General CSS ~end *
+  *******************/
+
+  /**********************
+  * Mainmenuwrapper CSS *
+  **********************/
+
+  .mainmenuwrapper {
+    background:url("http://th09.deviantart.net/fs71/PRE/i/2014/253/c/6/mega_sharpedo_by_jacanacow-d7yoyxn.png");
+    background-size: 750px;
+  }
+
+  .menugroup {
+    background: rgba(0, 0, 0, 0.8);
+    color: #F2F2F2;
+    border: 1px solid #000;
+  }
+
+  .mainmenu .menugroup:nth-child(1) .button, .mainmenu .menugroup:nth-child(2) p:nth-child(1) .button, .mainmenu .menugroup:nth-child(2) p:nth-child(2) .button, .mainmenu .menugroup:nth-child(2) p:nth-child(3) .button, .mainmenu .menugroup:nth-child(3) p:nth-child(1) .button, .mainmenu .menugroup:nth-child(3) p:nth-child(2) .button {
+    box-shadow: none;
+    border-color: #FFF;
+    background: rgba(71, 90, 184, 0.8);
+    color: #FFF;
+    text-shadow: none;
+    font-family: helvetica,arial,sans-serif;
+  }
+
+  .mainmenu .menugroup:nth-child(1) .button:hover, .mainmenu .menugroup:nth-child(2) p:nth-child(1) .button:hover, .mainmenu .menugroup:nth-child(2) p:nth-child(2) .button:hover, .mainmenu .menugroup:nth-child(2) p:nth-child(3) .button:hover, .mainmenu .menugroup:nth-child(3) p:nth-child(1) .button:hover, .mainmenu .menugroup:nth-child(3) p:nth-child(2) .button:hover, .mainmenu .menugroup:nth-child(1) .button:focus, .mainmenu .menugroup:nth-child(2) p:nth-child(1) .button:focus, .mainmenu .menugroup:nth-child(2) p:nth-child(2) .button:focus, .mainmenu .menugroup:nth-child(2) p:nth-child(3) .button:focus, .mainmenu .menugroup:nth-child(3) p:nth-child(1) .button:focus, .mainmenu .menugroup:nth-child(3) p:nth-child(2) .button:focus {
+    box-shadow: none;
+    border-color: #FFF;
+    background: rgba(22, 33, 95, 0.8);
+    color: #FFF;
+    text-shadow: none;
+  }
+
+  .menugroup .button.disabled, .menugroup .button.disabled:hover, .menugroup .button.disabled:active {
+    box-shadow: none;
+    border-color: #FFF;
+    background: rgba(71, 90, 184, 0.3);
+    color: #FFF !important;
+    text-shadow: none;
+  }
+
+  .select {
+    box-shadow: none;
+    border-color: #FFF;
+    background: rgba(71, 90, 184, 0.8);
+    color: #FFF;
+    text-shadow: none;
+    font-family: helvetica,arial,sans-serif;
+  }
+
+  .select:hover, .select:focus {
+    box-shadow: none;
+    border-color: #FFF;
+    background: rgba(22, 33, 95, 0.8);
+    color: #FFF;
+    text-shadow: none;
+  }
+
+  .select::after {
+    color: #FFF;
+  }
+
+  .select:disabled, .select:disabled:hover {
+    box-shadow: none;
+    border-color: #FFF;
+    background: rgba(71, 90, 184, 0.3);
+    color: #FFF !important;
+    text-shadow: none;
+  }
+
+  /* PMs CSS */
+
+  .pm-window.news-embed {
+    opacity: 0.5;
+  }
+
+  .pm-window.news-embed:hover {
+    opacity: 1;
+  }
+
+  .pm-window h3.pm-notifying {
+    background: #CE77A0;
+    border: 1px solid #A23B68;
+    color: #FFF;
+    text-shadow: 0px -1px 0px #A23B68;
+  }
+
+  .pm-window h3.pm-notifying:hover {
+    background: #D87EA8;
+    border: 1px solid #A23B68;
+    color: #FFF;
+    text-shadow: 0px -1px 0px #A23B68;
+  }
+
+  .pm-window h3 {
+    border-color: #000;
+    background: rgba(0, 0, 0, 0.8);
+    color: #FFF;
+    text-shadow: 0px -1px 0px #000;
+  }
+
+  .pm-window h3:hover {
+    border-color: #000;
+    background: rgba(0, 0, 0, 0.9);
+    color: #FFF;
+  }
+
+  .pm-window.focused h3, .pm-window.focused h3:hover {
+    border-color: #000;
+    background: rgba(0, 0, 0, 0.9);
+    color: #FFF;
+  }
+
+  .pm-window h3 .closebutton, .pm-window h3 .minimizebutton {
+    color: #F2F2F2;
+    background: transparent;
+    border: none;
+  }
+
+  .pm-window h3 .closebutton:hover {
+    color: #E67373;
+  }
+
+  .pm-window h3 .minimizebutton:hover {
+    color: #E6C073;
+  }
+
+  .pm-window h3 small {
+    color: #DDD;
+  }
+
+  .pm-log, .pm-window.focused .pm-log {
+    border-color: #000;
+  }
+
+  .challenge {
+    background: rgba(0, 0, 0, 0.8);
+    color: #F2F2F2;
+    border-color: #000;
+  }
+
+  .pm-log-add {
+    border-color: #000;
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  .pm-window.focused .pm-log-add {
+    border-color: #000;
+    background: rgba(0, 0, 0, 0.9);
+  }
+
+  .pm-log-add .textbox {
+    border-color: #000;
+    box-shadow: none;
+  }
+
+  .message-pm {
+    color: #3A4C9A;
+  }
+
+  /* PMs CSS ~end */
+
+  .mainmenufooter {
+    background: rgba(0, 0, 0, 0.8);
+    bottom: 0px;
+    left: 0px;
+    padding: 10px;
+    border-top-right-radius: 5px;
+    color: #F2F2F2;
+    border-color: #000;
+    border-style: solid;
+    border-width: 1px 1px 0px 0px;
+  }
+
+  .mainmenufooter a {
+    color: #F2F2F2;
+  }
+
+  .mainmenufooter a:hover {
+    color: #B8688B;
+  }
+
+  /***************************
+  * Mainmenuwrapper CSS ~end *
+  ***************************/
+
+  /***********
+  * Room CSS *
+  ***********/
+
+  .roomlist a.ilink {
+    box-shadow: none;
+    border-color: #FFF;
+    background: rgba(71, 90, 184, 0.8);
+    color: #FFF;
+    text-shadow: none;
+  }
+
+  .roomlist a.ilink:hover {
+    box-shadow: none;
+    border-color: #FFF;
+    background: rgba(22, 33, 95, 0.8);
+    color: #FFF;
+    text-shadow: none;
+  }
+
+  .roomlist a.ilink small {
+    color: #F2F2F2;
+  }
+
+  .roomlist h2 {
+    text-shadow: none;
+  }
+
+  /* Chat CSS */
+
+  .chat-log {
+    background: rgba(255, 255, 255, 0.8);
+  }
+
+  .chat-log a.ilink {
+    color: #223194;
+  }
+
+  .chat-log a.ilink:hover {
+    color: #162161;
+  }
+
+  .broadcast-blue {
+    background: #475AB8;
+    border: 1px solid #162161;
+    padding: 4px;
+    color: #F2F2F2;
+    margin: 5px;
+    text-align: center;
+    font-family: sans-serif;
+    text-shadow: 0px -1px 0px #162161;
+  }
+
+  .broadcast-red {
+    background: #B8688B;
+    border: 1px solid #A23966;
+    padding: 4px;
+    color: #F2F2F2;
+    margin: 5px;
+    text-align: center;
+    font-family: sans-serif;
+    text-shadow: 0px -1px 0px #A23966;
+  }
+
+  .broadcast-green {
+    background: #4CB948;
+    border: 1px solid #247529;
+    padding: 4px;
+    color: #F2F2F2;
+    margin: 5px;
+    text-align: center;
+    font-family: sans-serif;
+    text-shadow: 0px -1px 0px #247529;
+  }
+
+  .message .result {
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid #162161;
+    color: #F2F2F2;
+    font-family: sans-serif;
+    text-shadow: 0px -1px 0px #000;
+  }
+
+  .infobox {
+    border-color: #000;
+    background: rgba(0, 0, 0, 0.8);
+    color: #F2F2F2;
+  }
+
+  .infobox hr {
+    border: none;
+    border-bottom: 1px solid #F2F2F2;
+  }
+
+  .infobox a {
+    color: #B66989;
+  }
+
+  .infobox a:hover {
+    color: #C3477D;
+  }
+
+  .userlist {
+    background: rgba(0, 0, 0, 0.8);
+    color: #F2F2F2;
+    border-right: 1px solid #000;
+  }
+
+  .userlist li {
+    border-bottom: 1px solid #000;
+    background: transparent;
+  }
+
+  .userlist li em.group {
+    color: #F2F2F2;
+  }
+
+  .userlist li button {
+    text-shadow: 1px 1px #000;
+    background: transparent;
+  }
+
+  .userlist li button:hover {
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  .chat-log-add {
+    background: rgba(0, 0, 0, 0.8);
+    border-top: 1px solid #000;
+  }
+
+  .chat-log-add .textbox {
+    box-shadow: none;
+  }
+
+  .tournament-title {
+    background: rgba(0, 0, 0, 0.8);
+    color: #FFF;
+    text-shadow: 0px -1px 0px #000;
+  }
+
+  .tournament-status, .tournament-toggle {
+    background: #1D90FF;
+    color: #FFF;
+    text-shadow: 0px -1px 0px #1A71C9;
+    border-color: #000;
+  }
+
+  .tournament-box {
+    border-color: #000;
+  }
+
+  /* Chat CSS ~end */
+
+  .ladder table, .ladder td, .ladder th {
+    border-color: #000;
+  }
+
+  .ladder th {
+    background: #3A4C9A;
+    color: #FFF;
+    text-shadow: 0px -1px 0px #000;
+  }
+
+  .ladder td {
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  /****************
+  * Room CSS ~end *
+  ****************/
+
+  /******************
+  * Teambuilder CSS *
+  ******************/
+
+  .teamchartbox {
+    border-top: 1px solid #000;
+    background: transparent;
+  }
+
+  .setchart, .setchart-nickname {
+    background: #ABB6D2;
+    border-color: #000;
+    box-shadow: 1px 1px 0px rgba(255, 255, 255, 0.2) inset;
+  }
+
+  .setchart label, .setchart-nickname label {
+    color: #162161;
+    text-shadow: none;
+  }
+
+  .setchart input, .setchart-nickname input, .statform input.inputform, .setdetails, .setstats {
+    border-color: #000;
+    box-shadow: none;
+    background: #F9F9F9;
+  }
+
+  .setchart input:hover, .setchart-nickname input:hover, .statform input.inputform:hover, .setdetails:hover, .setstats:hover {
+    border-color: #000;
+    box-shadow: none;
+    background: #FFF;
+    color: #000;
+  }
+
+  .setchart input:focus, .setchart-nickname input:focus, .statform input.inputform:focus, .setdetails:focus, .setstats:focus {
+    box-shadow: 0px 0px 2px #8690AC;
+    border-color: #8690AC;
+  }
+
+  .teambuilder-results h3, .teambuilder-results .utilichart h3 {
+    background: #ABB6D2;
+    border-color: #000;
+    box-shadow: 1px 1px 0px rgba(255, 255, 255, 0.2) inset;
+    color: #162161;
+    text-shadow: none;
+  }
+
+  .utilichart .movenamecol, .utilichart .pokemonnamecol, .utilichart .namecol {
+    color: #F2F2F2;
+  }
+
+  .utilichart .twoabilitycol, .utilichart .abilitycol, .utilichart .statcol, .utilichart .bstcol, .utilichart .labelcol, .utilichart .widelabelcol, .utilichart .pplabelcol {
+    color: #CCC;
+  }
+
+  .utilichart .labelcol em, .utilichart .widelabelcol em, .utilichart .pplabelcol em, .utilichart .statcol em, .utilichart .bstcol em, .utilichart .numcol {
+    color: #888;
+  }
+
+  .utilichart .itemdesccol, .utilichart .abilitydesccol, .utilichart .movedesccol {
+    color: #BBB;
+  }
+
+  .teambuilder-results .result a:hover, .teambuilder-results .firstresult a {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #000;
+  }
+
+  .teambuilder-results .firstresult a:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: #000;
+  }
+
+  .utilichart b {
+    color: #C3477D;
+  }
+
+  .teambar button {
+    background: #ABB6D2;
+    border-color: #000;
+    color: #162161;
+    text-shadow: none;
+  }
+
+  .teambar button:hover {
+    background: #9CA5BF;
+    border-color: #000;
+    color: #162161;
+  }
+
+  .teambar button:disabled, .teambar button:disabled:hover, .teambar button:disabled:active {
+    background: rgba(156, 165, 191, 0.6);
+    border-color: #000;
+    color: #000;
+  }
+
+  .setmenu {
+    top: 2px;
+  }
+
+  .setmenu button {
+    color: #FFF;
+  }
+
+  .setmenu button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #000;
+  }
+
+  .teambuilder-clipboard-container {
+    border-color: #3A4C9A;
+  }
+
+  .teambuilder-clipboard-title {
+    color: #3A4C9A;
+  }
+
+  .teambuilder-clipboard-data, .teambuilder-clipboard-data:hover {
+    box-shadow: none;
+    border: 1px solid #FFF;
+    background: rgba(71, 90, 184, 0.8);
+    color: #FFF;
+    text-shadow: none;
+  }
+
+  .jslider .jslider-label {
+    color: #F2F2F2;
+    opacity: 0.8;
+  }
+
+  .jslider .jslider-value {
+    color: #000;
+  }
+
+  /***********************
+  * Teambuilder CSS ~end *
+  ***********************/
+
+  /*************
+  * Battle CSS *
+  *************/
+
+  .ps-room.ps-room-opaque {
+    background: #061522 url("http://i.imgur.com/UPGkb13.png?1") bottom left no-repeat;
+    color: #F9F9F9;
+  }
+
+  .battle-log {
+    border-color: #000;
+    background: rgba(242, 247, 250, 0.925);
+    z-index: 5;
+  }
+
+  .battle-log h2 {
+    background: #061522;
+    border-color: #000;
+    text-shadow: 0px -1px 0px #000;
+    color: #F2F2F2;
+    text-align: center;
+    width: 50%;
+    margin-left: calc(50% - 8px);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-family: sans-serif;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+  }
+
+  .battle-log-add {
+    background: #061522;
+    border-color: #000;
+    text-shadow: none;
+    color: #050026;
+    z-index: 5;
+  }
+
+  .battle-log-add .chatbox label {
+    text-shadow: 0px -1px 0px #000;
+  }
+
+  .battle-log-add .textbox {
+    border-color: #000;
+    box-shadow: none;
+  }
+
+  .battle-log .chat strong {
+    color: #061522;
+  }
+
+  em[style="color:#445566;display:block;"] {
+    color: #061522 !important;
+  }
+
+  .battle-log .rated strong {
+    background: #061522;
+  }
+
+  .battle {
+    border-color: #050026;
+    background: rgba(255, 255, 255, 0.5) !important;
+  }
+
+  .trainer strong {
+    color: #F2F2F2;  
+    font-size: 13px;
+    font-style: italic;
+  }
+
+  .battle-controls .whatdo {
+    background: rgba(0, 0, 0, 0.8);
+    color: #F2F2F2;
+  }
+
+  /* Rightbar CSS */
+
+  .rightbar {
+    position: absolute;
+    top: 0px;
+    left: -1px;
+    height: 80px;
+    width: calc(100% - 350px);
+    border-bottom-right-radius: 6px;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .rightbar .trainer {
+    margin-top: 0px;
+    text-align: left;
+  }
+
+  .rightbar .trainersprite{
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    opacity: 1 !important;
+  }
+
+  .rightbar .trainer .teamicons {
+    float:left;
+    position: relative;
+    top: 20px;
+    left: 5px;
+  }
+
+  .rightbar .trainer {
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+
+  /* Rightbar CSS ~end */
+
+  /* Leftbar CSS */
+
+  .leftbar {
+    position: absolute;
+    top: 280px;
+    left: 350px;
+    height: 80px;
+    width: calc(100% - 350px);
+    border-top-left-radius: 6px;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    background: rgba(0, 0, 0, 0.5);
+  } 
+
+  .leftbar .trainer {
+    margin-top: 0px;
+    text-align: right;
+  }
+
+  .leftbar .trainersprite{
+    position: absolute;
+    top: -5px;
+    left: 0px;
+    opacity: 1 !important;
+  }
+
+  .leftbar .trainer .teamicons {
+    float:left;
+    position: relative;
+    top: 20px;
+    left: 85px;
+  }
+
+  .leftbar .trainer {
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+
+  /* Leftbar CSS ~end */
+
+  .messagebar {
+    position: absolute;
+    display: none;
+    bottom: -3px;
+    left: 0px;
+    color: #CCC;
+    border-top-left-radius: 0px;
+    background: rgba(0, 0, 0, 0.75) none repeat scroll 0% 0%;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding: 2px 6px 0px;
+    overflow: hidden;
+    width: 250px;
+  }
+
+  .turn {
+    position: absolute;
+    display: none;
+    top: 10px;
+    left: 510px !important;
+    font-size: 13pt;
+    font-weight: normal;
+    margin: 0px;
+    padding: 2px 8px;
+    border: 1px solid #050026;
+    border-radius: 6px;
+    color: #050026;
+    background: #FCFAF2 none repeat scroll 0% 0%;
+  }
+
+  /* Weather CSS */
+
+  .weather em {
+    display: block;
+    margin: 50px 0px 0px 480px;
+    font-size: 12pt;
+    text-shadow: none;
+  }
+
+  .sunweather, .sunnydayweather, .desolatelandweather {
+    background: url(http://i.imgur.com/DNMtOWR.gif) scroll left top;
+  }
+
+  .rainweather, .raindanceweather, .primordialseaweather {
+    background: url(http://i.imgur.com/NQqkU6j.gif) scroll left top;
+  }
+
+  .deltastreamweather {
+    background: url(http://i.imgur.com/OEB3hum.gif) scroll left top;
+  }
+
+  .hailweather {
+    background: url(http://i.imgur.com/PweinWm.gif) scroll left top;
+  }
+
+  .sandstormweather {
+    background: url(http://i.imgur.com/OEB3hum.gif) scroll left top;
+  }
+
+  .pseudoweather {
+    background: url(http://play.pokemonshowdown.com/fx/weather-trickroom.png) scroll left top;
+  }
+
+  /* Weather CSS ~end */
+
+  .backdrop {
+    width: 640px;
+    height: 360px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    background: -50px -90px;
+    opacity: 1 !important;
+  }
+
+  .backdrop:before{
+    display: block;
+    content: "";
+    background: url("http://i.imgur.com/7yFJyjw.png");
+    background-size: cover;
+    width: 640px;
+    height: 360px;
+  }
+
+  #tooltipwrapper {   
+    z-index: 102;
+  }
+
+  #tooltipwrapper .tooltip {
+    background: #1D90FF;
+    border-color: #000;
+  }
+
+  #tooltipwrapper .tooltip h2 {
+    border-color: #060127;
+    background: rgba(255, 255, 255, 0.7);
+    color: #060127;
+  }
+
+  #tooltipwrapper .tooltip h2 small {
+    background: rgba(255, 255, 255, 0.7);
+  }
+
+  #tooltipwrapper .tooltip p {
+    background: rgba(255, 255, 255, 0.55);
+    color: #060127;
+  }
+
+  #tooltipwrapper .tooltip p.section {
+    border-top: 1px solid #060127;
+  }
+
+  .moveselect button, .switchselect button {
+    color: #FFF;
+  }
+
+  .moveselect button:hover, .switchselect button:hover {
+    background: transparent;
+  }
+
+  .switchmenu {
+    border-top: 3px solid #000;
+  }
+
+  .switchmenu button {
+    box-shadow: none;
+    border-color: #FFF;
+    background: rgba(0, 0, 0, 0.7);
+    color: #FFF;
+    text-shadow: none;
+    font-family: helvetica,arial,sans-serif;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    margin-top: 0px;
+    border-top: none !important;
+    padding: 3px 5px 5px 0px;
+    height: 30px;
+    transition:All 1.6116s ease;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+  .switchmenu button:hover {
+    border-color: #FFF;
+    background: rgba(0, 0, 0, 0.8);
+    color: #FFF !important;
+    height: 45px;
+  }
+
+  .switchmenu button:hover, .movemenu button:hover {
+    color: #000;
+  }
+
+  .switchmenu button.disabled, .switchmenu button:disabled {
+    border: 2px solid #EEE;
+    color: #EEE;
+    background: #111 !important;
+    height: 30px;
+  }
+
+  .statbar .hpbar {
+    background: none repeat scroll 0% 0% #000;
+    border: 1px solid #000;
+  }
+
+  .statbar .hpbar .hptextborder {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+  }
+
+  .statbar .hpbar .hptext {
+    background: #000;
+  }
+
+  .statbar .hpbar .prevhp {
+    background: #000;
+  }
+
+  .statbar strong {
+    display: block;
+    text-align: center;
+    color: #FFF;
+    text-shadow: 1px 1px 0px #000, 1px -1px 0px #000, -1px 1px 0px #000, -1px -1px 0px #000;
+  }
+
+  .battle-controls .whatdo small {
+    border: none;
+  }
+
+  /* Movemenu CSS */
+
+  .movemenu {
+    border-top: 5px solid #000;   
+  }
+
+  .movemenu button {
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    transition:All 1.6116s ease;
+    height: 24px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    padding: 4px 4px 0px;
+    border-top: none !important;
+  }
+
+  .movemenu button:hover {
+    height: 40px;
+    margin-bottom: -1px;
+  }
+
+  .movemenu button:disabled, .movemenu button:disabled:hover {
+    border: 2px solid #EEE;
+    color: #EEE;
+    background: #111 !important;
+    height: 24px;
+  }
+
+  .movemenu button.type-Electric {
+    background: rgba(0, 0, 0, 0.7);
+    border-color: #FFFB95;
+    color: #FFFB95;
+    text-shadow: 0px 0px 2px #000;
+    box-shadow: 0px 0px 2px #000;
+  }
+
+  .movemenu button.type-Electric:hover {
+    background: rgba(0, 0, 0, 0.8);
+    border-color: #F9F348;
+    color: #F9F348;
+    text-shadow: 0px 0px 2px #000;
+    box-shadow: 0px 0px 2px #000;
+  }
+
+  .movemenu button.type-Grass {
+    background: rgba(0, 0, 0, 0.7);
+    border-color: #91F29B;
+    color: #91F29B;
+    text-shadow: 0px 0px 2px #000;
+    box-shadow: 0px 0px 2px #000;
+  }
+
+  .movemenu button.type-Grass:hover {
+    background: rgba(0, 0, 0, 0.8);
+    border-color: #55F365;
+    color: #55F365;
+    text-shadow: 0px 0px 2px #000;
+    box-shadow: 0px 0px 2px #000;
+  }
+
+  .movemenu button.type-Dragon {
+    background: rgba(0, 0, 0, 0.7);
+    border-color: #A594D0;
+    color: #A594D0;
+    text-shadow: 0px 0px 2px #000;
+    box-shadow: 0px 0px 2px #000;
+  }
+
+  .movemenu button.type-Dragon:hover {
+    background: rgba(0, 0, 0, 0.8);
+    border-color: #8E73CB;
+    color: #8E73CB;
+    text-shadow: 0px 0px 2px #000;
+    box-shadow: 0px 0px 2px #000;
+  }
+
+  .movemenu button.type-Water {
+    background: rgba(0, 0, 0, 0.7);
+    border-color: #86CDD0;
+    color: #86CDD0;
+    text-shadow: 0px 0px 2px #000;
+    box-shadow: 0px 0px 2px #000;
+  }
+
+  .movemenu button.type-Water:hover {
+    background: rgba(0, 0, 0, 0.8);
+    border-color: #4DCACE;
+    color: #4DCACE;
+    text-shadow: 0px 0px 2px #000;
+    box-shadow: 0px 0px 2px #000;
+  }
+
+  .movemenu button.type-Normal {
+    background: rgba(0, 0, 0, 0.7);
+    border-color: #DBDBDB;
+    color: #DBDBDB;
+    text-shadow: 0px 0px 2px #000;
+    box-shadow: 0px 0px 2px #000;
+    border-top: none !important;
+  }
+
+  .movemenu button.type-Normal:hover {
+    background: rgba(0, 0, 0, 0.8);
+    border-color: #F5F5F5;
+    color: #F5F5F5;
+    text-shadow: 0px 0px 2px #000;
+    box-shadow: 0px 0px 2px #000;
+  }
+
+  .movemenu button.type-Ghost {
+    background: rgba(0, 0, 0, 0.7);
+    border-color: #C0ABDF;
+    color: #C0ABDF;
+    text-shadow: 0px 0px 2px #000;
+    box-shadow: 0px 0px 2px #000;
+  }
+
+  .movemenu button.type-Ghost:hover {
+    background: rgba(0, 0, 0, 0.8);
+    border-color: #AE8BE4;
+    color: #AE8BE4;
+    text-shadow: 0px 0px 2px #000;
+    box-shadow: 0px 0px 2px #000;
+  }
+
+  .movemenu button.type-Steel {
+    background: rgba(0, 0, 0, 0.7);
+    border-color: #ACACAC;
+    color: #ACACAC;
+    text-shadow: 0px 0px 2px #000;
+    box-shadow: 0px 0px 2px #000;
+  }
+
+  .movemenu button.type-Steel:hover {
+    background: rgba(0, 0, 0, 0.8);
+    border-color: #7A7A7A;
+    color: #7A7A7A;
+    text-shadow: 0px 0px 2px #000;
+    box-shadow: 0px 0px 2px #000;
+  }
+
+  .movemenu button.type-Fairy {
+    background: rgba(0, 0, 0, 0.7);
+    border-color: #FCB3F0;
+    color: #FCB3F0;
+    text-shadow: 0px 0px 2px #000;
+    box-shadow: 0px 0px 2px #000;
+  }
+
+  .movemenu button.type-Fairy:hover {
+    background: rgba(0, 0, 0, 0.8);
+    border-color: #FA7FE6;
+    color: #FA7FE6;
+    text-shadow: 0px 0px 2px #000;
+    box-shadow: 0px 0px 2px #000;
+  }
+
+  .movemenu button.type-Dark {
+    background: rgba(0, 0, 0, 0.7);
+    border-color: #626262;
+    color: #626262;
+    text-shadow: 0px 0px 2px #000;
+    box-shadow: 0px 0px 2px #000;
+  }
+
+  .movemenu button.type-Dark:hover {
+    background: rgba(0, 0, 0, 0.8);
+    border-color: #393939;
+    color: #393939;
+    text-shadow: 0px 0px 2px #000;
+    box-shadow: 0px 0px 2px #000;
+  }
+
+  .movemenu button.type-Fire {
+    background: rgba(0, 0, 0, 0.7);
+    border-color: #FFD089;
+    color: #FFD089;
+    text-shadow: 0px 0px 2px #000;
+    box-shadow: 0px 0px 2px #000;
+  }
+
+  .movemenu button.type-Fire:hover {
+    background: rgba(0, 0, 0, 0.8);
+    border-color: #FFBC55;
+    color: #FFBC55;
+    text-shadow: 0px 0px 2px #000;
+    box-shadow: 0px 0px 2px #000;
+  }
+
+  .movemenu button.type-Fighting {
+    background: rgba(0, 0, 0, 0.7);
+    border-color: #DFA39F;
+    color: #DFA39F;
+    text-shadow: 0px 0px 2px #000;
+    box-shadow: 0px 0px 2px #000;
+  }
+
+  .movemenu button.type-Fighting:hover {
+    background: rgba(0, 0, 0, 0.8);
+    border-color: #DA7B74;
+    color: #DA7B74;
+    text-shadow: 0px 0px 2px #000;
+    box-shadow: 0px 0px 2px #000;
+  }
+
+  .movemenu button.type-Poison {
+    background: rgba(0, 0, 0, 0.7);
+    border-color: #DCB4DC;
+    color: #DCB4DC;
+    text-shadow: 0px 0px 2px #000;
+    box-shadow: 0px 0px 2px #000;
+  }
+
+  .movemenu button.type-Poison:hover {
+    background: rgba(0, 0, 0, 0.8);
+    border-color: #D085D0;
+    color: #D085D0;
+    text-shadow: 0px 0px 2px #000;
+    box-shadow: 0px 0px 2px #000;
+  }
+
+  .movemenu button.type-Rock {
+    background: rgba(0, 0, 0, 0.7);
+    border-color: #DBCC90;
+    color: #DBCC90;
+    text-shadow: 0px 0px 2px #000;
+    box-shadow: 0px 0px 2px #000;
+  }
+
+  .movemenu button.type-Rock:hover {
+    background: rgba(0, 0, 0, 0.8);
+    border-color: #C4B475;
+    color: #C4B475;
+    text-shadow: 0px 0px 2px #000;
+    box-shadow: 0px 0px 2px #000;
+  }
+
+  .movemenu button.type-Ground {
+    background: rgba(0, 0, 0, 0.7);
+    border-color: #DED2B0;
+    color: #DED2B0;
+    text-shadow: 0px 0px 2px #000;
+    box-shadow: 0px 0px 2px #000;
+  }
+
+  .movemenu button.type-Ground:hover {
+    background: rgba(0, 0, 0, 0.8);
+    border-color: #E5CE8E;
+    color: #E5CE8E;
+    text-shadow: 0px 0px 2px #000;
+    box-shadow: 0px 0px 2px #000;
+  }
+
+  .movemenu button.type-Ice {
+    background: rgba(0, 0, 0, 0.7);
+    border-color: #A7E8E8;
+    color: #A7E8E8;
+    text-shadow: 0px 0px 2px #000;
+    box-shadow: 0px 0px 2px #000;
+  }
+
+  .movemenu button.type-Ice:hover {
+    background: rgba(0, 0, 0, 0.8);
+    border-color: #79CDCD;
+    color: #79CDCD;
+    text-shadow: 0px 0px 2px #000;
+    box-shadow: 0px 0px 2px #000;
+  }
+
+  .movemenu button.type-Flying {
+    background: rgba(0, 0, 0, 0.7);
+    border-color: #BFB5DF;
+    color: #BFB5DF;
+    text-shadow: 0px 0px 2px #000;
+    box-shadow: 0px 0px 2px #000;
+  }
+
+  .movemenu button.type-Flying:hover {
+    background: rgba(0, 0, 0, 0.8);
+    border-color: #A597D5;
+    color: #A597D5;
+    text-shadow: 0px 0px 2px #000;
+    box-shadow: 0px 0px 2px #000;
+  }
+
+  .movemenu button.type-Psychic {
+    background: rgba(0, 0, 0, 0.7);
+    border-color: #E9B8C7;
+    color: #E9B8C7;
+    text-shadow: 0px 0px 2px #000;
+    box-shadow: 0px 0px 2px #000;
+  }
+
+  .movemenu button.type-Psychic:hover {
+    background: rgba(0, 0, 0, 0.8);
+    border-color: #E595AD;
+    color: #E595AD;
+    text-shadow: 0px 0px 2px #000;
+    box-shadow: 0px 0px 2px #000;
+  }
+
+  .movemenu button.type-Bug {
+    background: rgba(0, 0, 0, 0.7);
+    border-color: #E0E6A8;
+    color: #E0E6A8;
+    text-shadow: 0px 0px 2px #000;
+    box-shadow: 0px 0px 2px #000;
+  }
+
+  .movemenu button.type-Bug:hover {
+    background: rgba(0, 0, 0, 0.8);
+    border-color: #B9C16B;
+    color: #B9C16B;
+    text-shadow: 0px 0px 2px #000;
+    box-shadow: 0px 0px 2px #000;
+  }
+
+  .movemenu button.type-Bug small {
+    color: #E0E6A8;
+  }
+
+  .movemenu button.type-Psychic small {
+    color: #E9B8C7;
+  }
+
+  .movemenu button.type-Flying small {
+    color: #BFB5DF;
+  }
+
+  .movemenu button.type-Ice small {
+    color: #A7E8E8;
+  }
+
+  .movemenu button.type-Ground small {
+    color: #DED2B0;
+  }
+
+  .movemenu button.type-Rock small {
+    color: #DBCC90;
+  }
+
+  .movemenu button.type-Poison small {
+    color: #DCB4DC;
+  }
+
+  .movemenu button.type-Fighting small {
+    color: #DFA39F;
+  }
+
+  .movemenu button.type-Fire small {
+    color: #FFD089;
+  }
+
+  .movemenu button.type-Dark small {
+    color: #413E41;
+  }
+
+  .movemenu button.type-Fairy small {
+    color: #FCB3F0;
+  }
+
+  .movemenu button.type-Steel small {
+    color: #ACACAC;
+  }
+
+  .movemenu button.type-Ghost small {
+    color: #C0ABDF;
+  }
+
+  .movemenu button.type-Grass small {
+    color: #91F29B;
+  }
+
+  .movemenu button.type-Normal small {
+    color: #DBDBDB;
+  }
+
+  .movemenu button.type-Electric small {
+    color: #FFFB95;
+  }
+
+  .movemenu button.type-Water small {
+    color: #86CDD0;
+  }
+
+  .movemenu button.type-Dragon small {
+    color: #A594D0;
+  }
+
+  .movemenu button:disabled {
+    background: #201E1E;
+    border-color: #171616;
+    color: #DDD;
+    text-shadow: 0px 0px 2px #000;
+    box-shadow: 0px 0px 2px #000;
+  }
+
+  /*******************
+  * Battle CSS ~end  *
+  *******************/
